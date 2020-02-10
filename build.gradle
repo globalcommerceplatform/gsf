@@ -8,7 +8,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'maven'
 
-group = 'com.github.intune-gcp'
+group = 'com.github.globalcommerceplatform'
 
 sourceCompatibility = 1.8 // java 8
 targetCompatibility = 1.8
