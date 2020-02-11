@@ -1,20 +1,8 @@
-/**
-buildscript {
-    repositories {
-           jcenter()
-    }
-    dependencies {
-        classpath 'net.sf.proguard:proguard-gradle:6.2.2'
-    }
-} 
-
-apply plugin: 'java'
-apply plugin: 'maven'
-**/
-
 plugins {
 	id 'java'
 	id 'maven'
+	id 'org.springframework.boot' version '2.2.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 }
 
 group = 'com.github.globalcommerceplatform'
@@ -27,7 +15,7 @@ repositories {
 }
 
 dependencies {
-	compile 'org.springframework.boot:spring-boot-starter-web'
+	//implementation 'org.springframework.boot:spring-boot-starter-web'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
